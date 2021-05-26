@@ -1,0 +1,89 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-family: Helvetica, Arial, sans-serif;
+	background: linear-gradient(to right, #68b4e3, #bc9ae6);
+}
+
+#main{
+	
+}
+
+#main #content{
+	width: 60%;
+	min-height: 500px;
+	margin: 100px auto;
+	display: flex;
+}
+
+#content #general{
+	background: #fff;
+	width: 50%;
+	padding: 50px;
+}
+
+#general h2{
+	color: #1887cc;
+	font-size: 1.6em;
+	margin-bottom: 30px;
+}
+
+
+#general #Phone,
+#general #email,
+#general #Company{
+	border: none;
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
+	padding: 5px 0px 15px 10px;
+	font-size: 1.2em;
+}
+
+#general #First{
+	margin-right: 10px;
+}
+
+#general #Last,
+#general #First{
+	border: none;
+	display: inline-block;
+	width: 48%;
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
+	padding: 5px 0px 15px 10px;
+	font-size: 1.2em;
+}
+
+#content #job{
+	background-color: #1532b3;
+	width: 50%;
+	padding: 50px;
+}
+
+#job h2{
+	color: #fff;
+	font-size: 1.6em;
+	margin-bottom: 30px;
+}
+
+#job #yourJob{
+	border: none;
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 20px;
+	padding: 5px 0px 15px 10px;
+	font-size: 1.2em;
+	background-color: #1532b3;
+	color: #fff;
+}
+
+#describe{
+	max-width: 100%;
+	padding: 5px;
+}

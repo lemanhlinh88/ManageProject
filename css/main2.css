@@ -1,0 +1,187 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.header{
+	height: 40px;
+	background-color: #de4426;
+	display: flex;
+
+	.infomation{
+		width: 20%;
+		display: flex;
+		justify-content: flex-end;
+
+
+		.fullName{
+			display: inline-block;
+			margin-right: 10px;
+
+			a{
+				line-height: 40px;
+				text-decoration: none;
+				color: #fff;
+				font-size: 1.4em;
+			}
+		}
+
+
+		.image{
+			margin-right: 25px;
+
+			img{
+				height: 40px;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	.title {
+		width: 80%;
+		color: #fff;
+		text-align: center;
+		line-height: 40px;
+		font-size: 1.4em;
+	}
+}
+
+.content{
+	min-height: 680px;
+	display: flex;
+
+	.menu{
+		width: 15%;
+		background-color: #b8450b;
+
+		.create{
+			height: 60px;
+			p{
+				font-size: 2em;
+				line-height: 60px;
+				text-align: center;
+				color: #fff;
+				margin-top: 5px;
+			}
+
+			button{
+				background-color: #b8450b;
+				border: none;
+				font-size: 1em;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+				text-align: center;
+				line-height: 30px;
+				padding: 3px 6px;
+				color: #fff;
+				border-radius: 5px;
+				margin-left: 10px;
+			}
+		}
+
+		.Project{
+			height: 40px;
+			text-align: center;
+
+			button{
+				margin-top: 10px;
+				margin-bottom: 10px;
+				min-width: 85%;
+				background-color: #b8450b;
+				border: none;
+				font-size: 1em;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+				line-height: 40px;
+				color: #fff;
+				border-radius: 5px;
+			}
+		}
+	}
+
+	.share{
+		padding: 20px;
+		width: 85%;
+		background-color: #04040d;
+
+		.share-project{
+			border-radius: 5px;
+			height: 40px;
+			color: #fff;
+			background-color: #737378;
+			width: 500px;
+			line-height: 40px;
+			padding-left: 10px;
+			font-size: 1.4em;
+
+			button{
+				background-color: #737378;
+				border: none;
+				font-size: 1.2em;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+				line-height: 25px;
+				padding: 3px 8px;
+				color: #fff;
+				border-radius: 5px;
+				float: right;
+				margin-right: 10px;
+				margin-top: 4px;
+				border-radius: 5px;
+			}
+		}
+
+		.menu-part {
+			display: flex;
+			margin-top: 20px;
+			box-sizing: border-box;
+
+			.part{
+				width: calc(100% / 3);
+				background-color: #737378;
+				border-radius: 5px;
+
+				p{
+					height: 40px;
+					line-height: 40px;
+					font-size: 1.4em;
+					padding-left: 10px;
+				}
+
+				button{
+					background-color: #737378;
+					border: none;
+					font-size: 1.2em;
+					box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+					line-height: 25px;
+					padding: 3px 8px;
+					color: #fff;
+					border-radius: 5px;
+					float: right;
+					margin-right: 10px;
+					margin-top: 4px;
+					border-radius: 5px;
+				}
+
+				.select{
+					display: flex;
+					height: 30px;
+					padding-left: 10px;
+					font-size: 1.1em;
+					line-height: 30px;
+
+					.name{
+						width: 50%;
+					}
+
+					.user{
+						width: 50%;
+						font-size: 0.9em;
+						line-height: 30px;
+					}
+				}
+			}
+		}
+	}
+}

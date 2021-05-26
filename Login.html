@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng nhập</title>
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+	<style>
+		.form-group.invalid input {
+		  border-color: #f33a58;
+		}
+		.form-group.invalid .form-message {
+		  color: #f33a58;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<form class="form" id="form-1">
+			<h2>Quản lí dự án</h2>
+			<div class="form-group">
+				<input id="email" type="email" name="" placeholder="VD: lemanhlinh0808@gmail.com" class="form-user">
+				<p class="form-message"></p>
+			</div>
+
+			<div class="form-group">
+				<input id="password" type="password" name="" placeholder="Nhập mật khẩu" class="form-password">
+				<p class="form-message"></p>
+			</div>
+
+			<button class="button-login">Đăng nhập</button>
+			<button class="button-create">Đăng kí</button>
+
+			<a href="#">Quên mật khẩu</a>
+		</form>
+	</div>
+	<script src="./js/Validator.js"></script>
+		<script >
+			Validator({
+				form: '#form-1',
+				errorSelector: '.form-message',
+				rules: [
+					Validator.isRequired('#email'),
+  					Validator.isEmail('#email'),
+  					Validator.isRequired('#password'),
+  					Validator.minLength('#password', 6)
+  				]
+			});
+	</script>
+</body>
+</html>

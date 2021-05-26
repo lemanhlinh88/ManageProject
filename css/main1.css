@@ -1,0 +1,224 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#header{
+	height: 40px;
+	background-color: #de4426;
+	display: flex;
+}
+
+#header #title{
+	width: 80%;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 1.4em;
+}
+
+#header #infomation{
+	width: 20%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#infomation #fullName{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#fullName a{
+	line-height: 40px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.4em;
+}
+
+#fullName:hover a{
+	color: #000;
+}
+
+#infomation #image{
+	margin-right: 25px;
+}
+
+#image img{
+	height: 40px;
+	border-radius: 50%;
+}
+
+#main #content{
+	min-height: 680px;
+	display: flex;
+}
+
+#content #menu{
+	width: 15%;
+	background-color: #b8450b;
+}
+
+#menu #create{
+	height: 60px;
+	/*border-bottom: 1px solid #000;*/
+}
+
+#menu #create p{
+	font-size: 2em;
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+	margin-top: 5px;
+}
+
+#menu #create button{
+	background-color: #b8450b;
+	border: none;
+	font-size: 1em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	line-height: 30px;
+	padding: 3px 6px;
+	color: #fff;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+#menu .Project{
+	height: 40px;
+	text-align: center;
+}
+
+.Project button{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-width: 85%;
+	background-color: #b8450b;
+	border: none;
+	font-size: 1em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	line-height: 40px;
+	color: #fff;
+	border-radius: 5px;
+}
+
+#content #share{
+	padding: 20px;
+	width: 85%;
+	background-color: #04040d;
+}
+
+#share #share-project{
+	border-radius: 5px;
+	height: 40px;
+	width: 400px;
+	background-color: #737378;
+/*	line-height: 40px;
+	padding-left: 10px;
+	font-size: 1.4em;*/
+}
+
+#share-project input{
+	line-height: 40px;
+	padding-left: 10px;
+	font-size: 1.4em;
+	display: inline-block;
+	background-color: #737378;
+	border: none;
+	color: #fff;
+}
+
+#share-project button{
+	background-color: #737378;
+	border: none;
+	font-size: 1.2em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	line-height: 25px;
+	padding: 3px 8px;
+	color: #fff;
+	border-radius: 5px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 4px;
+	border-radius: 5px;
+}
+
+#menu-part {
+	display: flex;
+	margin-top: 20px;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+
+#menu-part .part{
+	width: calc(96% / 3);
+	background-color: #737378;
+	border-radius: 5px;
+	padding-bottom: 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.part p{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+}
+
+.part p input{
+	background-color: #737378;
+	border: none;
+	font-size: 1.4em;
+	padding-left: 5px;
+	display: inline-block;
+	width: 200px;
+
+}
+
+.part button{
+	background-color: #737378;
+	border: none;
+	font-size: 1.2em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	line-height: 25px;
+	padding: 3px 8px;
+	color: #fff;
+	border-radius: 5px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 4px;
+	border-radius: 5px;
+}
+
+.part .select{
+	display: flex;
+	height: 30px;
+	padding-left: 10px;
+	font-size: 1.1em;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+
+.select .name{
+	width: 100%;
+}
+
+/*.select .user{
+	width: 50%;
+	font-size: 0.9em;
+	line-height: 30px;
+}*/
+
+.select input{
+	background-color: #737378;
+	border: none;
+	line-height: 30px;
+	padding-left: 10px;
+	display: inline-block;
+	width: 90%;
+}
+

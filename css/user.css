@@ -1,0 +1,137 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#header{
+	height: 40px;
+	background-color: #de4426;
+	display: flex;
+}
+
+#header #title{
+	width: 80%;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 1.4em;
+}
+
+#header #infomation{
+	width: 20%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#infomation #fullName{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#fullName a{
+	line-height: 40px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.4em;
+}
+
+#fullName:hover a{
+	color: #000;
+}
+
+#infomation #image{
+	margin-right: 25px;
+}
+
+#image img{
+	height: 40px;
+	border-radius: 50%;
+}
+
+#main #content{
+	min-height: 680px;
+	display: flex;
+}
+
+#content #menu{
+	width: 20%;
+	background-color: #b8450b;
+}
+
+#menu #create{
+	height: 60px;
+	/*border-bottom: 1px solid #000;*/
+}
+
+#menu #create p{
+	font-size: 2em;
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+	margin-top: 5px;
+}
+
+#menu #create button{
+	background-color: #b8450b;
+	border: none;
+	font-size: 1em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	line-height: 30px;
+	padding: 3px 6px;
+	color: #fff;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+#menu .Project{
+	height: 40px;
+	text-align: center;
+}
+
+.Project button{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-width: 85%;
+	background-color: #b8450b;
+	border: none;
+	font-size: 1em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	line-height: 40px;
+	color: #fff;
+	border-radius: 5px;
+}
+
+#content #share{
+	padding: 20px;
+	width: 80%;
+	background-color: #04040d;
+	display: flex;
+}
+
+#part {
+	margin-top: 20px;
+	box-sizing: border-box;
+	width: 50%;
+	background-color: #737378;
+	padding: 20px;
+	color: #fff;
+	height: 200px;
+}
+
+#part h2{
+	margin-bottom: 10px;
+	font-size: 1.6em;
+}
+
+#part p{
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+
+
+

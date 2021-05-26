@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quên mật khẩu</title>
+	<link rel="stylesheet" type="text/css" href="./css/forgot.css">
+	<style>
+		.form-group.invalid input {
+		  border-color: #f33a58;
+		}
+		.form-group.invalid .form-message {
+		  color: #f33a58;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<form class="form" id="form-1">
+			<h2>Quên Mật khẩu</h2>
+			<div class="form-group">
+				<input id="email" type="email" name="" placeholder="VD: lemanhlinh0808@gmail.com" class="form-user">
+				<p class="form-message"></p>
+			</div>
+
+			<div class="form-group">
+				<input id="code" type="text" name="" placeholder="Mã code gửi về mail" class="form-text">
+				<p class="form-message"></p>
+			</div>
+
+			<div class="form-group">
+				<input id="password" type="password" name="" placeholder="Nhập mật khẩu" class="form-password">
+				<p class="form-message"></p>
+			</div>
+
+			<div class="form-group">
+				<input id="repeat" type="password" name="" placeholder="Nhập lại mật khẩu" class="form-repeat">
+				<p class="form-message"></p>
+			</div>
+
+			<button class="button-login">Thay đổi</button>
+		</form>
+	</div>
+	<script src="./js/Validator.js"></script>
+		<script >
+			Validator({
+				form: '#form-1',
+				errorSelector: '.form-message',
+				rules: [
+					Validator.isRequired('#email'),,
+	  				Validator.isEmail('#email'),
+	  				Validator.isRequired('#code'),
+	  				Validator.isRequired('#password'),
+	  				Validator.minLength('#password', 6),
+	  				Validator.isRequired('#repeat'),
+			  		Validator.isConfirmed('#repeat', function() {
+			  			return document.querySelector('#form-1 #password').value;
+			  		}, 'Mật Khẩu nhập lại không chính xác')
+  				]
+			});
+	</script>
+</body>
+</html>
