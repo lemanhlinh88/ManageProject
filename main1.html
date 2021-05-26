@@ -78,5 +78,21 @@
 	</div>
 	<script src="./js/jquery-3.6.0.js"></script>
 	<script src="./js/main1.js"></script>
+	<script>
+		$(document).ready(function() {
+			console.log( "ready!" );
+			render();
+			$('.part-add').click(function(){
+				console.log('you clicked me');
+				add_work(0, 0);
+			});	
+			$('#add').click(function(){
+				add_project();
+			})
+			$('.share-add').click(function(){
+				add_User(0);
+			});
+		});
+	</script>
 </body>
 </html>

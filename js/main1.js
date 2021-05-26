@@ -11,7 +11,6 @@ const projects = [
 		]
 	}
 ];
-
 function add_project(){
 	projects.push({
 		name: 'New project',
@@ -26,41 +25,12 @@ function add_project(){
 	});
 	render();
 };
-
-$('#add').click(function(){
-	add_project();
-})
-
-
-function add_User(index){
-	projects[index].users.push({
-		name : 'New User',
-		user : [
-			'Work 1'
-		]
-	});
-	render();
-}
-
-$('.share-add').click(function(){
-	add_User(0);
-})
-
-function add_work(index, index_user){
-	projects[index].users[index_user].push('work 2');
-	render();
-}
-
-$('#part-add').click(function(){
-	add_work(0, 0);
-})
-
 function render(){
-	const htl = projects.map(project => `
+	var htl = projects.map(project => `
 		<button class="button-project">${project.name}</button>
 	`).join('');
 
-	const create_user = projects[0].users.map(user => `
+	var create_user = projects[0].users.map(user => `
 					<div class="part">
 						<p>
 							<input type="text" name="" value="New User">
@@ -73,27 +43,35 @@ function render(){
 								<input type="text" name="" value="Work 1">
 							</div>
 							<!-- <div class="user">
-								<input type="text" name="" value="Person1">
+								<input type="text" name="" value="${user.name}">
 							</div> -->
-
 						</div>
 					</div>
 		`).join('');
 
-	const create_work = projects[0].users[0].user.map(us => `
-				<input type="text" name="" value="Work 1">
-			`).join('');
-
-	$('.name').html(create_work);
-
+	var create_work = projects[0].users[0].user.map(function(currentValue, index, arr) {
+		var html = '<input type="text" name="" value="'+currentValue+'"></input>'
+		return html
+	}).join(' ');
+	console.log(create_user)
 	$('#menu-part').html(create_user);
-
+	$('.name').html(create_work);
+	
+	
 	$('.Project').html(htl);
 }
-
-render();
-
-
-
-
-
+function add_work(index, index_user){
+	
+	console.log(projects[index].users[index_user])
+	projects[index].users[index_user].user.push("work 2");
+	render();
+}
+function add_User(index){
+	projects[index].users.push({
+		name : 'New User',
+		user : [
+			'Work 1'
+		]
+	});
+	render();
+}
